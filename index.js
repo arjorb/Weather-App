@@ -26,9 +26,8 @@ function addWeatherToPage(data){
     weather.classList.add('weather');
 
     weather.innerHTML = `
-    <small>There are</small>
     <h2>${temp}°C</h2>
-    <p>in ${search.value}</p>
+    <small>${data.weather[0].main}</small>
     `
     main.appendChild(weather);
 }
